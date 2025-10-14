@@ -4,7 +4,7 @@ import com.models.Quiz;
 import com.models.Question;
 import com.models.UserStats;
 import com.models.Certificate;
-import com.utils.JSONLoader;
+// JSONLoader removed - now using database
 import com.utils.PdfGenerator;
 import java.time.LocalDate;
 import java.util.List;
@@ -28,15 +28,18 @@ public class QuizManager {
     }
     
     public List<String> getAvailableCategories() {
-        return JSONLoader.getAvailableCategories();
+        // TODO: Implement database-based category loading
+        return null;
     }
     
     public String getCategoryDescription(String category) {
-        return JSONLoader.getCategoryDescription(category);
+        // TODO: Implement database-based category description loading
+        return null;
     }
     
     public Quiz startQuiz(String category, String difficulty) {
-        List<Question> questions = JSONLoader.loadQuestions(category);
+        // TODO: Implement database-based question loading
+        List<Question> questions = null;
         
         // Filter questions by difficulty if specified
         if (!difficulty.equals("All")) {
@@ -149,11 +152,13 @@ public class QuizManager {
     }
     
     public List<Question> getQuestionsForCategory(String category) {
-        return JSONLoader.loadQuestions(category);
+        // TODO: Implement database-based question loading
+        return null;
     }
     
     public List<Question> getQuestionsForCategoryAndDifficulty(String category, String difficulty) {
-        List<Question> questions = JSONLoader.loadQuestions(category);
+        // TODO: Implement database-based question loading
+        List<Question> questions = null;
         
         if (!difficulty.equals("All")) {
             questions = questions.stream()

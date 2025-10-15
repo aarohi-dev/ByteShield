@@ -44,7 +44,7 @@ public class ByteShieldApp extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         
         // Welcome title
-        JLabel titleLabel = new JLabel("🛡️ ByteShield");
+        JLabel titleLabel = new JLabel("ByteShield");
         titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 24));
         titleLabel.setForeground(new Color(44, 62, 80));
         gbc.gridx = 0;

@@ -53,7 +53,7 @@ public class QuizDAO {
                 questions.add(question);
             }
             
-            System.out.println("✅ Retrieved " + questions.size() + " questions from database");
+            System.out.println("Retrieved " + questions.size() + " questions from database");
         }
         
         return questions;
@@ -81,7 +81,7 @@ public class QuizDAO {
                 }
             }
             
-            System.out.println("✅ Retrieved " + questions.size() + " questions for category: " + category);
+            System.out.println("Retrieved " + questions.size() + " questions for category: " + category);
         }
         
         return questions;
@@ -109,7 +109,7 @@ public class QuizDAO {
                 }
             }
             
-            System.out.println("✅ Retrieved " + questions.size() + " questions for difficulty: " + difficulty);
+            System.out.println("Retrieved " + questions.size() + " questions for difficulty: " + difficulty);
         }
         
         return questions;
@@ -128,7 +128,7 @@ public class QuizDAO {
             
             if (resultSet.next()) {
                 int count = resultSet.getInt(1);
-                System.out.println("📊 Total questions in database: " + count);
+                System.out.println("Total questions in database: " + count);
                 return count;
             }
         }
@@ -163,7 +163,7 @@ public class QuizDAO {
                 try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
                     if (generatedKeys.next()) {
                         int newId = generatedKeys.getInt(1);
-                        System.out.println("✅ Inserted new question with ID: " + newId);
+                        System.out.println("Inserted new question with ID: " + newId);
                         return newId;
                     }
                 }
@@ -182,10 +182,10 @@ public class QuizDAO {
         int count = getQuestionCount();
         
         if (count == 0) {
-            System.out.println("📝 Database is empty, inserting sample questions...");
+            System.out.println("Database is empty, inserting sample questions...");
             insertSampleQuestions();
         } else {
-            System.out.println("✅ Database already contains " + count + " questions");
+            System.out.println("Database already contains " + count + " questions");
         }
     }
     
@@ -201,7 +201,7 @@ public class QuizDAO {
             insertQuestion(question);
         }
         
-        System.out.println("✅ Inserted " + sampleQuestions.size() + " sample questions");
+        System.out.println("Inserted " + sampleQuestions.size() + " sample questions");
     }
     
     /**

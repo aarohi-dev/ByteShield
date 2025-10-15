@@ -151,13 +151,13 @@ public class QuizPanel extends JPanel {
                 return;
             }
             
-            System.out.println("✅ Loaded " + questions.size() + " questions from database");
+            System.out.println(" Loaded " + questions.size() + " questions from database");
             displayCurrentQuestion();
             updateQuizUI();
             
         } catch (SQLException e) {
             showErrorMessage("Failed to load questions from database: " + e.getMessage());
-            System.err.println("❌ Database error: " + e.getMessage());
+            System.err.println("Database error: " + e.getMessage());
         }
     }
     
@@ -225,9 +225,9 @@ public class QuizPanel extends JPanel {
             
             if (isCorrect) {
                 score++;
-                System.out.println("✅ Correct answer!");
+                System.out.println("Correct answer!");
             } else {
-                System.out.println("❌ Incorrect answer. Correct answer: " + question.getCorrectOption());
+                System.out.println("Incorrect answer. Correct answer: " + question.getCorrectOption());
             }
             
             // Show explanation

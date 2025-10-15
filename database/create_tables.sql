@@ -1,5 +1,8 @@
 -- ByteShield Database Schema
 -- PostgreSQL database setup for cybersecurity quiz application
+-- 
+-- Note: Database connection details are now loaded from .env file
+-- Update your .env file with the correct database credentials
 
 -- Create database (run this as superuser)
 -- CREATE DATABASE byteshield_db;

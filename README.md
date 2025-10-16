@@ -59,43 +59,6 @@ An educational JavaFX application that simulates real-world cybersecurity scenar
 mvn clean package
 java -jar target/cyber-hygiene-trainer-1.0.0.jar
 ```
-
-## 🏗️ Project Structure
-
-```
-src/
-├── main/
-│   ├── java/com/
-│   │   ├── Main.java                 # Application entry point
-│   │   ├── QuizManager.java          # Core quiz management logic
-│   │   ├── controllers/              # JavaFX controllers
-│   │   │   ├── HomeController.java
-│   │   │   ├── QuizController.java
-│   │   │   ├── ResultController.java
-│   │   │   └── TipsController.java
-│   │   ├── models/                   # Data models
-│   │   │   ├── Question.java
-│   │   │   ├── Quiz.java
-│   │   │   ├── UserStats.java
-│   │   │   └── Certificate.java
-│   │   └── utils/                    # Utility classes
-│   │       ├── JSONLoader.java
-│   │       ├── PdfGenerator.java
-│   │       └── ChartHelper.java
-│   └── resources/
-│       ├── css/
-│       │   └── styles.css            # Modern UI styling
-│       ├── data/                     # JSON data files
-│       │   ├── questions.json
-│       │   ├── phishing_examples.json
-│       │   └── tips.json
-│       └── ui/                       # FXML UI files
-│           ├── home.fxml
-│           ├── quiz.fxml
-│           ├── result.fxml
-│           └── tips.fxml
-```
-
 ## 🎮 How to Use
 
 ### 1. **Home Screen**
@@ -193,21 +156,11 @@ We welcome contributions! Here's how you can help:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Cybersecurity experts who provided question content
 - JavaFX community for excellent documentation
 - Open source libraries that made this project possible
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/ByteShield/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/ByteShield/discussions)
-- **Email**: support@byteshield.app
 
 ---
 

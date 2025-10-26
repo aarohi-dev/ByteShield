@@ -133,13 +133,13 @@ public class QuizQuestion {
      * @return The text of the correct option
      */
     public String getCorrectOptionText() {
-        switch (Character.toUpperCase(correctOption)) {
-            case 'A': return optionA;
-            case 'B': return optionB;
-            case 'C': return optionC;
-            case 'D': return optionD;
-            default: return "Unknown";
-        }
+        return switch (Character.toUpperCase(correctOption)) {
+            case 'A' -> optionA;
+            case 'B' -> optionB;
+            case 'C' -> optionC;
+            case 'D' -> optionD;
+            default -> "Unknown";
+        };
     }
     
     /**

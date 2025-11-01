@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: cdimasci
+Class-Path: kotlin-stdlib-1.4.0.jar kotlin-stdlib-common-1.4.0.jar ann
+ otations-13.0.jar
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_262
+Main-Class: io.cdimascio.DotenvKt
+
